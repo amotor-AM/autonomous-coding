@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ### 2. Set Up Authentication
 
-**Option A: API Key (recommended for automation)**
+**Option A: API Key**
 ```bash
 # Copy the example and add your key
 cp .env.example .env
@@ -40,12 +40,12 @@ cp .env.example .env
 # Option B: Claude OAuth. This repo has been "hacked" to use OAuth natively instead of an API Key. Once you have installed claude code sign in with:
 claude  # Opens browser for OAuth login
 
-# Once signed in you can obtain your OAuth token by typing the following:
+# Get your OAuth token
 claude setup-token
 
-# Simply copy and paste the token into the .env file with the following line:
-export ANTHROPIC_API_KEY='your-api-key-here'
-
+# Copy the token and add to .env:
+export ANTHROPIC_API_KEY='your-oauth-token-here'
+```
 
 ### 3. Customize Your Project
 
