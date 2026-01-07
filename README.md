@@ -37,7 +37,8 @@ cp .env.example .env
 # You can get an API key from the Anthropic Console: https://console.anthropic.com/
 # BUT you will be charged per token used. This can easily add up to $100 - $200 per day.
 # 
-# Option B: Claude OAuth. This repo has been "hacked" to use OAuth natively instead of an API Key. Once you have installed claude code sign in with:
+# Option B: Claude OAuth. This repo has been "hacked" to use OAuth natively instead of an API Key. Once you have 
+# installed claude code sign in with:
 claude  # Opens browser for OAuth login
 
 # Get your OAuth token
