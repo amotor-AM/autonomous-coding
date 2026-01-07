@@ -5,7 +5,7 @@
 
 set -e
 
-PROJECT_DIR="./app/nvmercantile"
+PROJECT_DIR="./generations/app"
 MAX_SESSIONS=500
 DELAY_SECONDS=5
 
