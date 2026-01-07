@@ -1,0 +1,89 @@
+<project_specification>
+  <project_name>Your Application Name</project_name>
+
+  <overview>
+    Describe your application here. What does it do? What problem does it solve?
+    Be specific about the core functionality and user experience you want.
+  </overview>
+
+  <technology_stack>
+    <frontend>
+      <framework>React with Vite (or your preferred framework)</framework>
+      <styling>Tailwind CSS or vanilla CSS</styling>
+      <port>5173</port>
+    </frontend>
+    <backend>
+      <runtime>Node.js with Express (or your preferred runtime)</runtime>
+      <database>SQLite, PostgreSQL, or your preferred database</database>
+    </backend>
+  </technology_stack>
+
+  <core_features>
+    <!-- List your main features. Be specific about requirements. -->
+    
+    <feature name="Feature 1">
+      - Detailed description of feature
+      - Expected behavior
+      - User interactions
+    </feature>
+
+    <feature name="Feature 2">
+      - Detailed description of feature
+      - Expected behavior
+      - User interactions
+    </feature>
+
+    <!-- Add more features as needed -->
+  </core_features>
+
+  <database_schema>
+    <!-- Define your data models -->
+    <tables>
+      <table_name>
+        - field1: type, constraints
+        - field2: type, constraints
+      </table_name>
+    </tables>
+  </database_schema>
+
+  <api_endpoints>
+    <!-- Define your API structure -->
+    <endpoint>GET /api/resource - Description</endpoint>
+    <endpoint>POST /api/resource - Description</endpoint>
+  </api_endpoints>
+
+  <ui_layout>
+    <!-- Describe your UI structure -->
+    <main_structure>
+      - Layout description
+      - Navigation elements
+      - Key components
+    </main_structure>
+  </ui_layout>
+
+  <design_system>
+    <!-- Define your visual language -->
+    <color_palette>
+      - Primary: #hexcode
+      - Background: #hexcode
+      - Text: #hexcode
+    </color_palette>
+    <typography>
+      - Font family and sizes
+    </typography>
+  </design_system>
+
+  <success_criteria>
+    <!-- How do you know when it's done? -->
+    <functionality>
+      - All features work as specified
+      - Data persists correctly
+      - Error handling is graceful
+    </functionality>
+    <user_experience>
+      - Responsive on all devices
+      - Fast and intuitive
+      - Accessible
+    </user_experience>
+  </success_criteria>
+</project_specification>
