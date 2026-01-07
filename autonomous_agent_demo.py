@@ -25,7 +25,7 @@ from prompts import list_specs, get_available_specs
 
 # Configuration - Claude 4.5 models
 MODEL_OPUS = "claude-opus-4-5-20251101"
-MODEL_SONNET = "claude-sonnet-4-5-20250930"
+MODEL_SONNET = "claude-sonnet-4-5-20250929"
 DEFAULT_MODEL = MODEL_SONNET
 
 
