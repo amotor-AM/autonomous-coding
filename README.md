@@ -61,13 +61,13 @@ Edit `prompts/app_spec.txt` to define your application:
 
 ```bash
 # Start a new project
-python autonomous_agent_demo.py --project-dir ./my_project
+python autonomous_agent_demo.py
 
 # Use hybrid mode (Opus planning + Sonnet coding)
-python autonomous_agent_demo.py --project-dir ./my_project --hybrid
+python autonomous_agent_demo.py --hybrid
 
 # Limit iterations for testing
-python autonomous_agent_demo.py --project-dir ./my_project --max-iterations 5
+python autonomous_agent_demo.py --max-iterations 5
 ```
 
 ## How It Works
@@ -161,7 +161,7 @@ autonomous-coding/
 After running, your project directory will contain:
 
 ```
-my_project/
+generations/app/
 ├── feature_list.json         # Test cases (source of truth)
 ├── app_spec.txt              # Copied specification
 ├── init.sh                   # Environment setup script
@@ -173,7 +173,7 @@ my_project/
 ## Running the Generated Application
 
 ```bash
-cd my_project
+cd generations/app
 
 # Run the setup script created by the agent
 ./init.sh

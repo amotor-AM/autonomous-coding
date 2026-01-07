@@ -10,8 +10,8 @@ incorporates all the strategies from the long-running agents guide.
 Supports hybrid model usage: Opus for planning/initialization, Sonnet for implementation.
 
 Example Usage:
-    python autonomous_agent_demo.py --project-dir ./nvmercantile --spec-file nvmercantile_spec.txt
-    python autonomous_agent_demo.py --project-dir ./nvmercantile --hybrid  # Uses Opus + Sonnet
+    python autonomous_agent_demo.py
+    python autonomous_agent_demo.py --hybrid  # Uses Opus + Sonnet
 """
 
 import argparse
@@ -36,20 +36,23 @@ def parse_args() -> argparse.Namespace:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Start NVMercantile/Nexus project with Sonnet (default)
-  python autonomous_agent_demo.py --project-dir ./nvmercantile --spec-file nvmercantile_spec.txt
+  # Start project with Sonnet (default) - outputs to generations/app
+  python autonomous_agent_demo.py
 
   # Use HYBRID mode: Opus for planning, Sonnet for implementation
-  python autonomous_agent_demo.py --project-dir ./nvmercantile --spec-file nvmercantile_spec.txt --hybrid
+  python autonomous_agent_demo.py --hybrid
 
   # Use Opus only (more capable but uses quota faster)
-  python autonomous_agent_demo.py --project-dir ./nvmercantile --model claude-opus-4-5-20250929
+  python autonomous_agent_demo.py --model claude-opus-4-5-20251101
 
   # List available spec files
   python autonomous_agent_demo.py --list-specs
 
   # Limit iterations for testing
-  python autonomous_agent_demo.py --project-dir ./nvmercantile --max-iterations 5
+  python autonomous_agent_demo.py --max-iterations 5
+
+  # Custom output directory
+  python autonomous_agent_demo.py --project-dir ./my_custom_project
 
 Authentication:
   With Claude Pro subscription, authenticate via:
