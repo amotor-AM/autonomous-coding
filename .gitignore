@@ -1,0 +1,36 @@
+# Agent-generated output directories
+generations/
+
+# Log files
+logs/
+
+# Environment files (may contain API keys)
+.env
+.env.local
+.env.*.local
+
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# macOS metadata
+.DS_Store
+._*
+
+# IDE settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
